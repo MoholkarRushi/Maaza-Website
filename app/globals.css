@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --product-gradient: linear-gradient(135deg, #111 0%, #000 100%);
+}
+
+body {
+  background: var(--product-gradient);
+  color: #ffffff;
+  transition: background 0.8s ease-in-out;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Hide scrollbar for a cleaner app-like feel */
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom Selection */
+::selection {
+  background-color: #f97316; /* orange-500 */
+  color: #ffffff;
+}
